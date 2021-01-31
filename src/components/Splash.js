@@ -10,10 +10,11 @@ class Splash extends Component {
     }
 
     render () {
-        console.log(logo);
+        console.log(process.env);
         return (
         <div>
             <Navbar bg="dark" expand={'lg'} variant="dark">
+
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
@@ -27,9 +28,10 @@ class Splash extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <div className={'w-100 d-block text-right mr-5'}>
-                        <Nav.Link className={'d-inline-block'} href="#whitepaper"><strong>Whitepaper</strong></Nav.Link>
+                        <Nav.Link className={'d-inline-block'} href="whitepaper"><strong>Whitepaper</strong></Nav.Link>
                         <Nav.Link className={'d-inline-block'} href="#contact"><strong>Contact</strong></Nav.Link>
                         <Nav.Link className={'d-inline-block'} href="#risks"><strong>Risks</strong></Nav.Link>
+                        <Nav.Link className={'d-inline-block'} href="/playground"><strong>Playground</strong></Nav.Link>
                     </div>
                 </Navbar.Collapse>
             </Navbar>
