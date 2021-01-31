@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Splash from './components/Splash';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
-import {Navbar} from "react-bootstrap";
 import React from "react";
 import Playground from "./components/Playground";
 

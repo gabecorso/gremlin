@@ -3,7 +3,7 @@ var StellarSdk = require('stellar-sdk');
 const pair = StellarSdk.Keypair.random();
 console.log('pair', pair, pair.publicKey(), pair.secret());
 const fetch = require('node-fetch');
-(async function main() {
+async function createAccount() {
     try {
         const response = await fetch(
             `https://friendbot.stellar.org?addr=${encodeURIComponent(
@@ -22,5 +22,7 @@ const fetch = require('node-fetch');
     } catch (e) {
         console.error("ERROR!", e);
     }
-})();
+};
 //Account Two
+
+export default createAccount;
