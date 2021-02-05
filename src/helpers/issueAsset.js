@@ -3,28 +3,27 @@ const fetch = require("node-fetch");
 
 const server = new StellarSdk.Server("https://horizon-testnet.stellar.org");
 
-const ISSUER = process.env.REACT_APP_PUBLIC;
-const ISSUER_SECRET = process.env.REACT_APP_SECRET;
-const DIST = process.env.REACT_APP_PUBLIC2;
-const DIST_SECRET = process.env.REACT_APP_SECRET2;
+async function issueAsset() {
+    const ISSUER = process.env.REACT_APP_PUBLIC || '';
+    const ISSUER_SECRET = process.env.REACT_APP_SECRET || '';
+    const DIST = process.env.REACT_APP_PUBLIC2 || '';
+    const DIST_SECRET = process.env.REACT_APP_SECRET2 || '';
 
 // Keys for accounts to issue and receive the new asset.
-const issuingKeypair = StellarSdk.Keypair.fromSecret(
-    ISSUER_SECRET,
-);
-const distributionKeypair = StellarSdk.Keypair.fromSecret(
-    DIST_SECRET,
-);
-const availableCurrency = "1000";
-const distributedCurrency = "100";
+    const issuingKeypair = StellarSdk.Keypair.fromSecret(
+        ISSUER_SECRET,
+    );
+    const distributionKeypair = StellarSdk.Keypair.fromSecret(
+        DIST_SECRET,
+    );
+    const availableCurrency = "1000";
+    const distributedCurrency = "100";
 
 // Create an Asset object that represents the asset to be created.
-const gil = new StellarSdk.Asset(
-    "Gamestonk",
-    issuingKeypair.publicKey(),
-);
-
-async function issueAsset() {
+    const gil = new StellarSdk.Asset(
+        "Gamestonk",
+        issuingKeypair.publicKey(),
+    );
     return new Promise(async (resolve, reject) => {
         try {
             // Fetch the base fee and the account that will create our transaction
