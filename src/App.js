@@ -7,21 +7,11 @@ import {
 } from "react-router-dom";
 import React from "react";
 import Playground from "./components/Playground";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
-      <Router>
-          <div>
-              <Switch>
-                  <Route exact path="/">
-                     <Splash />
-                  </Route>
-                  <Route path="/playground">
-                      <Playground />
-                  </Route>
-              </Switch>
-          </div>
-      </Router>
+      <AppRouter />
   );
 }
 

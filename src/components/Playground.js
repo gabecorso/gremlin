@@ -5,6 +5,7 @@ import './styles/splash.css';
 import logo from '../assets/logo.png';
 import sendPayment from "../helpers/sendPayment";
 import issueAsset from "../helpers/issueAsset";
+import AppNav from "./AppNav";
 class Playground extends Component {
 
     constructor(props) {
@@ -31,28 +32,8 @@ class Playground extends Component {
         const {loading,response,loading_asset,response_asset} = this.state;
         return (
             <div>
-                <Navbar bg="dark" expand={'lg'} variant="dark">
-                    <Navbar.Brand href="#home">
-                        <img
-                            alt=""
-                            src={logo}
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                        />{' '}
-                        Gremlin
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <div className={'w-100 d-block text-right mr-5'}>
-                            <Nav.Link className={'d-inline-block'} href="#whitepaper"><strong>Whitepaper</strong></Nav.Link>
-                            <Nav.Link className={'d-inline-block'} href="#contact"><strong>Contact</strong></Nav.Link>
-                            <Nav.Link className={'d-inline-block'} href="#risks"><strong>Risks</strong></Nav.Link>
-                        </div>
-                    </Navbar.Collapse>
-                </Navbar>
-
-                <Container style={{minHeight: '100vh'}}>
+                <AppNav>
+                <Container style={{minHeight: '100vh'}} >
                     {response && <Alert className={'mt-5'} onClose={() => {
                         this.setState({response: null})
                     }} variant={'success'} dismissible>{response}</Alert>}
@@ -85,18 +66,7 @@ class Playground extends Component {
                         </Col>
                     </Row>
                 </Container>
-
-
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
-                        YSL © 2021
-                    </Navbar.Brand>
-                    <div className={'w-100 d-block text-center mr-5'}>
-                        <Nav.Link className={'d-inline-block'} href="#whitepaper"><strong>Privacy</strong></Nav.Link>
-                        <Nav.Link className={'d-inline-block'} href="#contact"><strong>Terms</strong></Nav.Link>
-                        <Nav.Link className={'d-inline-block'} href="#risks"><strong>Legal</strong></Nav.Link>
-                    </div>
-                </Navbar>
+                </AppNav>
             </div>
         )
     }
