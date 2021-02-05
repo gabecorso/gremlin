@@ -40,3 +40,7 @@
 .alert {
   word-break: break-word;
 }
+
+.border-boxed {
+  border: 3px solid indianred;
+}

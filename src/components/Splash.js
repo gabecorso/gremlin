@@ -17,8 +17,7 @@ class Splash extends Component {
             <Container className={'my-5 py-5'}>
                 <Row>
                     <Col md={12}>
-                        <h1 className={'text-center mb-5'}>Endgame: Gremlin Accords</h1>
-                        <Image src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'}></Image>
+                        <Image className={'mb-4'} src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'}></Image>
 
                         <p>The EndGame Team's aim is to make sure fairness and transparency prevail in this GameStop situation. We are proposing a solution that will end the conflict by delivering a swift and decisive victory to one side.
                         </p>
@@ -26,7 +25,7 @@ class Splash extends Component {
                         </p>
                         <p>This would destroy all incentives to perform scare tactics to get investors to sell $GME, since they would be locked up. Not only that, if all 65 million shares are locked up in this contract, and there are still trades being made, it would be clear that those trades are made with counterfeit stocks (Read more about BlockChain: link here)
                         </p>
-                        <h2>Here's how it works</h2>
+                        <h2 className={'p-3 my-5 border-boxed'} style={{maxWidth: 'fit-content'}}>Here's how it works</h2>
 
                         <p>An investor buys $GME at the market price and is given a crypto coin called GameStonk, which is redeemable for $GME when the stock reaches the "Name Your Price".
                         </p>

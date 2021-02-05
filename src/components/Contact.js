@@ -1,5 +1,5 @@
 import React, {Component,Fragment} from 'react';
-import {Container,Navbar,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
+import {Container,Navbar,Row,Col,Card} from "react-bootstrap";
 import './styles/splash.css';
 
 
@@ -18,11 +18,13 @@ class Contact extends Component {
             <div>
                 <AppNav>
                     <Container style={{minHeight: '100vh'}} >
-                        <Row>
+                        <Row className={'mt-5'}>
                             <Col>
-                                <h1>Join the Good Fight!</h1>
-                                <p>Want to help? Have questions about the goals and motivations behind Endgame? Just want to say hello?</p>
-                                <p><a href="mailto:info@gremlin.endgame.com">Send Gremlin an Email</a></p>
+                                <Card body>
+                                    <h1>Join the Good Fight!</h1>
+                                    <p>Want to help? Have questions about the goals and motivations behind Endgame? Just want to say hello?</p>
+                                    <p><a href="mailto:info@gremlin.endgame.com">Send Gremlin an Email</a></p>
+                                </Card>
                             </Col>
                         </Row>
                     </Container>

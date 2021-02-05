@@ -1,11 +1,10 @@
 import React, {Component,Fragment} from 'react';
 import {Container,Navbar,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles/splash.css';
 
 import logo from '../assets/logo.png';
-import {faReddit} from "@fortawesome/free-brands-svg-icons";
+import {faReddit,faTwitter} from "@fortawesome/free-brands-svg-icons";
 class AppNav extends Component {
 
     constructor(props) {
@@ -19,7 +18,7 @@ class AppNav extends Component {
         return (
             <div>
                 <Navbar bg="dark" expand={'lg'} variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={logo}
@@ -27,10 +26,9 @@ class AppNav extends Component {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        Gremlin
-                        <FontAwesomeIcon icon={faTwitter} />
-                        <FontAwesomeIcon icon={faReddit} />
-                        <FontAwesomeIcon icon={faCoffee} />
+                        Endgame: Gremlin Accords
+                        <FontAwesomeIcon className={'ml-2'} icon={faTwitter} />
+                        <FontAwesomeIcon className={'ml-2'} icon={faReddit} />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
