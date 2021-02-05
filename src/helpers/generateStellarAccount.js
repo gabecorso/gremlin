@@ -1,7 +1,6 @@
 var StellarSdk = require('stellar-sdk');
 //Account One
 const pair = StellarSdk.Keypair.random();
-console.log('pair', pair, pair.publicKey(), pair.secret());
 const fetch = require('node-fetch');
 async function createAccount() {
     try {
