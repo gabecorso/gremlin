@@ -34,6 +34,9 @@ class AppRouter extends Component {
                         <Route exact path="/">
                             <Splash />
                         </Route>
+                        <Route exact path="/here">
+                            <Splash />
+                        </Route>
                         <Route path="/gamestonk">
                             <Gamestonk />
                         </Route>
