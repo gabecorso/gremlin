@@ -19,57 +19,70 @@ class Gremlin extends Component {
                 <AppNav>
                     <Container>
                         <Row className={'my-5'}>
-                            <Col md={6}>
-                                <strong className={'d-block mb-1 text-left w-100'}>WHAT IS</strong>
-                                <h1 className={'text-left mb-3'}>GREMLIN</h1>
+                            <Col md={12}>
+                                <h1 className={'border-boxed mb-3'}>GREMLIN</h1>
+                                <h2>Smart Contract Solution</h2>
                                 <p className={'text-left'}>
-                                    GREMLIN is an acronym that stands for GameStonk, Regulatory Guidelines, EndGame,
-                                    Market Manipulation, Liquidity Issues, Investing, and Name Your Price.
-                                    GREMLIN is also the name of the White Paper, which proposes a
-                                    Smart Contract that can eradicate market manipulations and solve the prisoner’s dilemma.
+                                    Smart Contract Solution
+                                    EndGame builds a Smart Contract that changes the idea of investing and reduces market manipulation. It is open-source, immutable, and safe to attacks.
                                 </p>
-                            </Col>
-                            <Col md={6}>
-                                <Image fluid rounded src={'https://picsum.photos/300/300?grayscale&blur=1'}></Image>
                             </Col>
                         </Row>
                         <hr/>
                         <Row className={'my-5'}>
-                            <Col md={6}>
-                                <Image fluid rounded src={'https://picsum.photos/300/200?grayscale&blur=1'}></Image>
-                            </Col>
-                            <Col md={6}>
+                            <Col md={12}>
                                 <strong className={'d-block mb-1 text-left w-100'}>WHY</strong>
-                                <h1 className={'text-left mb-3'}>GameStop</h1>
-                                <p className={'text-left'}>
-                                    The GameStop situation is revealing a flaw in the financial system,
-                                    and uncovering market manipulations that take place frequently on Wall Street.
-                                    Retail investors that are buying and holding GameStop stocks are stuck
-                                    in a prisoner’s dilemma where the collective’s interest is to hold onto the stock,
-                                    but the individual’s interest is to take profit. In fact, we can find the prisoner’s
-                                    dilemma in many corners of our financial system.
-                                </p>
+                                <h2 className={'text-left mb-3'}>Acronym</h2>
+                                <ul>
+                                    <li>GameStonk</li>
+                                    <li>Regulatory</li>
+                                    <li>EndGame</li>
+                                    <li>Market Manipulation</li>
+                                    <li>Liquidity Issue</li>
+                                    <li>Investing</li>
+                                    <li>Name Your Price</li>
+                                </ul>
                             </Col>
                         </Row>
 
                         <hr/>
                         <Row className={'my-5'}>
 
-                            <Col md={6}>
-                                <strong className={'d-block mb-1 text-left w-100'}>HOW</strong>
-                                <h1 className={'text-left mb-3'}>GameStonk</h1>
-                                <p className={'text-left'}>
-                                    GameStonk is a cryptocurrency that can be purchased by 100+ different
-                                    currencies around the world, 24/7. By purchasing GameStonk,
-                                    the investor is entering into a Smart Contract that holds a
-                                    stock of GameStop that is redeemed when a predetermined condition is met.
-                                    By allowing 24/7 trading and predetermined investment conditions,
-                                    GameStonk reduces agents from acting in malicious, fraudulent ways to manipulate the market.
-                                </p>
-                            </Col>
+                            <Col md={12}>
+                                <h2 className={'border-boxed'}>What it means for each player</h2>
 
-                            <Col md={6}>
-                                <Image fluid rounded src={'https://picsum.photos/400/300?grayscale&blur=1'}></Image>
+
+                                <strong>WSB</strong>
+
+                                <p>Guaranteed win under your terms of conditions</p>
+
+                                <strong>Melvin:</strong>
+
+                                <p>No point in scare tactics. Less jail time</p>
+
+                                <strong>Regulators</strong>
+
+                                <p>Easier to track fraudulent activities on the blockchain system</p>
+                                <strong>BlackRock:</strong>
+                                <p>Sell 1M shares w/o triggering a sell-off</p>
+
+
+
+                                <strong>GameStop</strong>
+
+                                <p>Money will be invested in this company longer</p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <h1 className={'border-boxed'}>Future Applicability</h1>
+                                <ul>
+                                    <li>Support long-term projects (Tesla to the Moon)!</li>
+                                    <li>Support yearly/quarterly goals!</li>
+                                    <li>Everyone can invest regardless of country or currency.</li>
+                                    <li>Allow 24/7 trading, aftermarkets & premarket.</li>
+                                </ul>
                             </Col>
                         </Row>
 
