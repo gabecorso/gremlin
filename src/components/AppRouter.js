@@ -44,7 +44,7 @@ class AppRouter extends Component {
                             <Gremlin />
                         </Route>
                         <Route path="/endgame">
-                            <Endgame />
+                            <Splash />
                         </Route>
                         <Route path="/whitepaper">
                             <Whitepaper />

@@ -18,28 +18,71 @@ class Contact extends Component {
             <div>
                 <AppNav>
                     <Container style={{minHeight: '100vh'}} >
-                        <Row className={'mb-5'}>
-                            <Col md={6} className={'mt-5'}>
-                                <h1 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>Donate</h1>
-                                <Row>
-                                   <Col md={6}>
-                                       <Image fluid src={'https://static.wixstatic.com/media/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.png/v1/fill/w_442,h_484,al_c,lg_1,q_85/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.webp'}/>
-                                   </Col>
-                                    <Col md={6}>
-                                        <h2>How</h2>
-                                        <ol>
-                                            <li>Create a wallet on https://lobstr.co/</li>
-                                            <li>Fund it with XLM</li>
-                                            <li>Use the QR code on the left and pick the amount you would like to donate!</li>
-                                        </ol>
-                                        <h2>Amount</h2>
-                                        <div>Donate as little as 1 XLM</div>
-                                        <h2>Memo</h2>
-                                        <div>write your name to join the guild list</div>
-                                    </Col>
-                                </Row>
+
+                        <Row className={'mx-auto mb-4'}>
+                            <Col>
+                                <div className={'my-4 text-center'}>
+                                    <h2 className={'framed-yellow mx-auto mw-fit-content mb-4'}>Get Involved</h2>
+                                    <p>There are many ways to get involved:</p>
+                                    <ol style={{listStylePosition: 'inside'}} className={'mx-auto text-center'}>
+                                        <li>Donate!</li>
+                                        <li>Join the Guild List!</li>
+                                        <li>Trade your badges on the Free Market!</li>
+                                        <li>Participate in the Bounty Program!</li>
+                                        <li>Contact Us for More Info!</li>
+                                    </ol>
+                                </div>
                             </Col>
-                            <Col md={6} className={'mt-5'}>
+                        </Row>
+
+                        <Row className={'mx-auto mb-4'}>
+                            <Col>
+                                <div className={'my-4 text-center'}>
+                                    <h2 className={'mx-auto grey-blockquote mw-fit-content mb-4'}>Donate</h2>
+                                    <p>Your donation will fund the development of the Gremlin Accord Smart Contract and
+                                        cover the costs of spreading this message on the internet. We also need capital
+                                        to hire lawyers to represent us in front of the SEC and to broker a deal with
+                                        Institutions that want to sell $GME to retail investors. Finally, the donations
+                                        will be used to pay out bounties in the Bounty Program, which allows anyone in
+                                        the public to get paid for solving some of our biggest challenges!</p>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                           <Col md={6}>
+                               <Image fluid src={'https://static.wixstatic.com/media/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.png/v1/fill/w_442,h_484,al_c,lg_1,q_85/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.webp'}/>
+                           </Col>
+                            <Col md={6}>
+                                <h2>How</h2>
+                                <ol>
+                                    <li>Create a wallet on https://lobstr.co/</li>
+                                    <li>Fund it with XLM</li>
+                                    <li>Use the QR code on the left and pick the amount you would like to donate!</li>
+                                </ol>
+                                <h2>Amount</h2>
+                                <div>Donate as little as 1 XLM</div>
+                                <h2>Memo</h2>
+                                <div>write your name to join the guild list</div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={12} className={'mt-5'}>
+                                <h1 className={'blue-blockquote mw-fit-content mb-4'}>Join the Guild</h1>
+                                <Image className={'mb-4'} fluid src={'https://static.wixstatic.com/media/578455_288ecbaa85254cc89ace90d9d6734d3d~mv2.png/v1/fill/w_600,h_217,al_c,q_85,usm_0.66_1.00_0.01/578455_288ecbaa85254cc89ace90d9d6734d3d~mv2.webp'}></Image>
+                                <p>Your donation will provide you a Badge (NFT) that you can show off to your friends
+                                    for supporting the Gremlin Accords. These badges will commemorate your support
+                                    for De-Fi and brokering perhaps the most important deal in history. You can also
+                                    trade these badges on the Free Market. They are one-of-a-kind. The Gremlin Badge #1
+                                    and Captain Badge #1 are now available for purchase on the free market from JulieKim
+                                    and Decentralization44 respectively.</p>
+                            </Col>
+                        </Row>
+
+
+
+                        <Row>
+                            <Col md={12} className={'mt-5'}>
                                 <h1 className={'grey-blockquote mw-fit-content mb-4'}>Guild List</h1>
                                 <ul>
                                     <strong className={'mt-4'}>
