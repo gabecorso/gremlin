@@ -20,8 +20,8 @@ class Gremlin extends Component {
                     <Container>
                         <Row className={'my-5'}>
                             <Col md={12}>
-                                <h1 className={'border-boxed mb-3'}>GREMLIN</h1>
-                                <h2>Smart Contract Solution</h2>
+                                <h1 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>GREMLIN</h1>
+                                <h2 className={'mb-4'}>Smart Contract <span className={'lw-font'}>Solution</span></h2>
                                 <p className={'text-left'}>
                                     Smart Contract Solution
                                     EndGame builds a Smart Contract that changes the idea of investing and reduces market manipulation. It is open-source, immutable, and safe to attacks.
@@ -31,17 +31,30 @@ class Gremlin extends Component {
                         <hr/>
                         <Row className={'my-5'}>
                             <Col md={12}>
-                                <strong className={'d-block mb-1 text-left w-100'}>WHY</strong>
                                 <h2 className={'text-left mb-3'}>Acronym</h2>
-                                <ul>
-                                    <li>GameStonk</li>
-                                    <li>Regulatory</li>
-                                    <li>EndGame</li>
-                                    <li>Market Manipulation</li>
-                                    <li>Liquidity Issue</li>
-                                    <li>Investing</li>
-                                    <li>Name Your Price</li>
-                                </ul>
+                                <div className={'acronym-wrapper'}>
+                                    <div className={'mb-4'}>
+                                        <strong>G</strong>ameStonk
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>R</strong>egulatory
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>E</strong>ndGame
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>M</strong>arket Manipulation
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>L</strong>iquidity Issue
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>I</strong>nvesting
+                                    </div>
+                                    <div className={'mb-4'}>
+                                        <strong>N</strong>ame Your Price
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
 
@@ -49,34 +62,34 @@ class Gremlin extends Component {
                         <Row className={'my-5'}>
 
                             <Col md={12}>
-                                <h2 className={'border-boxed'}>What it means for each player</h2>
+                                <h2 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>What it means for each player</h2>
 
 
-                                <strong>WSB</strong>
+                                <h4><strong>WSB</strong></h4>
 
                                 <p>Guaranteed win under your terms of conditions</p>
 
-                                <strong>Melvin:</strong>
+                                <h4><strong>Melvin:</strong></h4>
 
                                 <p>No point in scare tactics. Less jail time</p>
 
-                                <strong>Regulators</strong>
+                                <h4><strong>Regulators</strong></h4>
 
                                 <p>Easier to track fraudulent activities on the blockchain system</p>
-                                <strong>BlackRock:</strong>
+
+                                <h4><strong>BlackRock:</strong></h4>
+
                                 <p>Sell 1M shares w/o triggering a sell-off</p>
 
-
-
-                                <strong>GameStop</strong>
+                                <h4><strong>GameStop</strong></h4>
 
                                 <p>Money will be invested in this company longer</p>
                             </Col>
                         </Row>
-
-                        <Row>
+                        <hr/>
+                        <Row className={'mb-5'}>
                             <Col>
-                                <h1 className={'border-boxed'}>Future Applicability</h1>
+                                <h1 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>Future Applicability</h1>
                                 <ul>
                                     <li>Support long-term projects (Tesla to the Moon)!</li>
                                     <li>Support yearly/quarterly goals!</li>

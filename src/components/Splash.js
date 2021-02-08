@@ -17,7 +17,7 @@ class Splash extends Component {
             <Container className={'my-5 py-5'}>
                 <Row>
                     <Col md={12}>
-                        <Image className={'mb-4'} src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'}></Image>
+                        <Image fluid className={'mb-4'} src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'} />
 
                         <p>The EndGame Team's aim is to make sure fairness and transparency prevail in this GameStop situation. We are proposing a solution that will end the conflict by delivering a swift and decisive victory to one side.
                         </p>

@@ -42,5 +42,30 @@
 }
 
 .border-boxed {
-  border: 3px solid indianred;
+  border: 9px solid indianred;
+}
+
+.mw-fit-content {
+  max-width: fit-content;
+}
+
+.acronym-wrapper {
+  font-size: 24px;
+}
+
+.lw-font {
+  font-weight: 200 !important;
+}
+
+.grey-blockquote {
+  background: lightslategrey;
+  padding: 15px;
+}
+
+.framed-yellow {
+  padding: 15px;
+  background: yellow;
+  border: 1px solid goldenrod;
+  box-shadow: 7px 7px darkgoldenrod;
+
 }
