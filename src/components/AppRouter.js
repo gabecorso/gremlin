@@ -1,10 +1,6 @@
-import React, {Component,Fragment} from 'react';
-import {Container,Navbar,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
+import React, {Component} from 'react';
 import './styles/splash.css';
 
-import logo from '../assets/logo.png';
-import sendPayment from "../helpers/sendPayment";
-import issueAsset from "../helpers/issueAsset";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Splash from "./Splash";
 import Playground from "./Playground";
@@ -13,7 +9,6 @@ import PG13 from "./PG13";
 import Gamestonk from "./Gamestonk";
 import Whitepaper from "./Whitepaper";
 import Gremlin from "./Gremlin";
-import Endgame from "./Endgame";
 class AppRouter extends Component {
 
     constructor(props) {
