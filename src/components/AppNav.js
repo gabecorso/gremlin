@@ -27,8 +27,10 @@ class AppNav extends Component {
                             className="d-inline-block align-top"
                         />{' '}
                         Endgame: Gremlin Accords
-                        <FontAwesomeIcon className={'ml-2'} icon={faTwitter} />
-                        <FontAwesomeIcon className={'ml-2'} icon={faReddit} />
+                        {/*<FontAwesomeIcon className={'ml-2'} icon={faTwitter} />*/}
+                        <a rel="noreferrer" href={'https://www.reddit.com/user/gremlin-endgame/'} target={'_blank'}>
+                            <FontAwesomeIcon className={'ml-2'} icon={faReddit} />
+                        </a>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
