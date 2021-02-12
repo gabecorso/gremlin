@@ -1,5 +1,5 @@
 import React, {Component,Fragment} from 'react';
-import {Container,Navbar,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
+import {Container,Navbar,NavDropdown,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles/splash.css';
 
@@ -39,7 +39,16 @@ class AppNav extends Component {
                             <Nav.Link className={'d-inline-block'} href="/gamestonk"><strong>Gamestonk</strong></Nav.Link>
                             <Nav.Link className={'d-inline-block'} href="/gremlin"><strong>Gremlin</strong></Nav.Link>
                             <Nav.Link className={'d-inline-block'} href="/pg-13"><strong>PG-13</strong></Nav.Link>
-                            <Nav.Link className={'d-inline-block'} href="/contact"><strong>Marketplace</strong></Nav.Link>
+                            <NavDropdown className={'d-inline-block'} title="Marketplace" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/get-involved">Get Involved</NavDropdown.Item>
+                                <NavDropdown.Item href="/donate">Donate</NavDropdown.Item>
+                                <NavDropdown.Item href="/guild-list">Guild List</NavDropdown.Item>
+                                <NavDropdown.Item href="/your-badges">Your Badges</NavDropdown.Item>
+                                <NavDropdown.Item href="/free-market">Free Market</NavDropdown.Item>
+                                <NavDropdown.Item href="/bounty-program">Bounty Program</NavDropdown.Item>
+                                <NavDropdown.Item href="/contact-us">Contact Us</NavDropdown.Item>
+                            </NavDropdown>
+                            
                         </div>
                     </Navbar.Collapse>
                 </Navbar>

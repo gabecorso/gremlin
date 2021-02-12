@@ -53,6 +53,7 @@
   font-size: 24px;
 }
 
+
 .lw-font {
   font-weight: 200 !important;
 }
@@ -68,4 +69,7 @@
   border: 1px solid goldenrod;
   box-shadow: 7px 7px darkgoldenrod;
 
+}
+.dropdown-item {
+  color: black;
 }
