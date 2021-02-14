@@ -63,6 +63,11 @@
   padding: 15px;
 }
 
+.green-blockquote {
+  background: lightgreen;
+  padding: 15px;
+}
+
 .framed-yellow {
   padding: 15px;
   background: yellow;
@@ -70,6 +75,34 @@
   box-shadow: 7px 7px darkgoldenrod;
 
 }
-.dropdown-item {
-  color: black;
+
+.framed-blue {
+  padding: 15px;
+  background: lightblue;
+  border: 1px solid blue;
+  box-shadow: 7px 7px blue;
 }
+
+.framed-green {
+  padding: 15px;
+  background: lightgreen;
+  border: 1px solid green;
+  box-shadow: 7px 7px green;
+}
+
+.framed-red {
+  padding: 15px;
+  background: lightsalmon;
+  border: 1px solid red;
+  box-shadow: 7px 7px red;
+}
+
+ul li {
+ font-weight: bold;
+}
+
+ol li {
+  font-weight: bold;
+}
+
+

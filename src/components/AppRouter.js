@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import './styles/splash.css';
-
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Splash from "./Splash";
 import Playground from "./Playground";
-import Contact from "./Contact";
 import PG13 from "./PG13";
 import Gamestonk from "./Gamestonk";
 import Whitepaper from "./Whitepaper";
