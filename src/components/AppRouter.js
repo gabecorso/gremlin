@@ -64,9 +64,9 @@ class AppRouter extends Component {
                         <Route path="/bounty-program">
                             <BountyProgram />
                         </Route>
-                        <Route path="/your-badges">
+                        {/* <Route path="/your-badges">
                            <YourBadges />
-                        </Route>
+                        </Route> */}
                         <Route path="/free-market">
                            <FreeMarket />
                         </Route>
