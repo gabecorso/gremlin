@@ -84,7 +84,7 @@ class GetInvolved extends Component {
                         <Row>
                             <Col>
                                 <div className={'my-4'}>
-                                    <h1 className={'framed-yellow mw-fit-content mb-4 mx-auto'}>Bounty</h1>
+                                    <h1 className={'framed-yellow mw-fit-content mb-4 mx-auto'}>Bounty Program</h1>
                                     <ul>
                                         <li>1 XLM back: for donating any amount!</li>
                                         <li>5 XLM: for user interface improvement</li>

@@ -43,7 +43,7 @@ class AppNav extends Component {
                                 <NavDropdown.Item href="/get-involved">Get Involved</NavDropdown.Item>
                                 <NavDropdown.Item href="/donate">Donate</NavDropdown.Item>
                                 <NavDropdown.Item href="/guild-list">Guild List</NavDropdown.Item>
-                                <NavDropdown.Item href="/your-badges">Your Badges</NavDropdown.Item>
+                                {/* <NavDropdown.Item href="/your-badges">Your Badges</NavDropdown.Item> */}
                                 <NavDropdown.Item href="/free-market">Free Market</NavDropdown.Item>
                                 <NavDropdown.Item href="/bounty-program">Bounty Program</NavDropdown.Item>
                                 <NavDropdown.Item href="/contact-us">Contact Us</NavDropdown.Item>

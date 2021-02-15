@@ -68,6 +68,16 @@
   padding: 15px;
 }
 
+.yellow-blockquote {
+  background: goldenrod;
+  padding: 15px;
+}
+
+.purple-blockquote {
+  background: violet;
+  padding: 15px;
+}
+
 .framed-yellow {
   padding: 15px;
   background: yellow;
