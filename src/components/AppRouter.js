@@ -1,14 +1,19 @@
 import React, {Component} from 'react';
 import './styles/splash.css';
-
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Splash from "./Splash";
 import Playground from "./Playground";
-import Contact from "./Contact";
 import PG13 from "./PG13";
 import Gamestonk from "./Gamestonk";
 import Whitepaper from "./Whitepaper";
 import Gremlin from "./Gremlin";
+import Donate from "./Donate";
+import FreeMarket from "./FreeMarket";
+import GuildList from "./GuildList";
+import YourBadges from "./YourBadges";
+import ContactUs from "./ContactUs"
+import GetInvolved from "./GetInvolved";
+import BountyProgram from "./BountyProgram";
 class AppRouter extends Component {
 
     constructor(props) {
@@ -47,8 +52,26 @@ class AppRouter extends Component {
                         <Route path="/pg-13">
                            <PG13 />
                         </Route>
-                        <Route path="/contact">
-                           <Contact />
+                        <Route path="/get-involved">
+                           <GetInvolved />
+                        </Route>
+                        <Route path="/donate">
+                           <Donate />
+                        </Route>
+                        <Route path="/guild-list">
+                           <GuildList />
+                        </Route>
+                        <Route path="/bounty-program">
+                            <BountyProgram />
+                        </Route>
+                        {/* <Route path="/your-badges">
+                           <YourBadges />
+                        </Route> */}
+                        <Route path="/free-market">
+                           <FreeMarket />
+                        </Route>
+                        <Route path="/contact-us">
+                           <ContactUs />
                         </Route>
                         <Route path="/playground">
                             <Playground />

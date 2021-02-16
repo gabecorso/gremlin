@@ -53,12 +53,28 @@
   font-size: 24px;
 }
 
+
 .lw-font {
   font-weight: 200 !important;
 }
 
 .grey-blockquote {
   background: lightslategrey;
+  padding: 15px;
+}
+
+.green-blockquote {
+  background: lightgreen;
+  padding: 15px;
+}
+
+.yellow-blockquote {
+  background: goldenrod;
+  padding: 15px;
+}
+
+.purple-blockquote {
+  background: violet;
   padding: 15px;
 }
 
@@ -69,3 +85,34 @@
   box-shadow: 7px 7px darkgoldenrod;
 
 }
+
+.framed-blue {
+  padding: 15px;
+  background: lightblue;
+  border: 1px solid blue;
+  box-shadow: 7px 7px blue;
+}
+
+.framed-green {
+  padding: 15px;
+  background: lightgreen;
+  border: 1px solid green;
+  box-shadow: 7px 7px green;
+}
+
+.framed-red {
+  padding: 15px;
+  background: lightsalmon;
+  border: 1px solid red;
+  box-shadow: 7px 7px red;
+}
+
+ul li {
+ font-weight: bold;
+}
+
+ol li {
+  font-weight: bold;
+}
+
+

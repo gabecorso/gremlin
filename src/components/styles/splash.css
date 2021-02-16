@@ -4,3 +4,12 @@
 .navbar a {
     color: white;
 }
+
+.navbar .dropdown-item {
+    color: black
+}
+
+#basic-nav-dropdown {
+    font-weight: bold;
+}
+
