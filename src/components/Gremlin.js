@@ -15,16 +15,15 @@ class Gremlin extends Component {
     render () {
         const {loading,response,loading_asset,response_asset} = this.state;
         return (
-            <div>
+            <div className="gremlin-bg">
                 <AppNav>
                     <Container>
                         <Row className={'my-5'}>
                             <Col md={12}>
-                                <h1 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>GREMLIN</h1>
+                                <h1 className={'border-boxed p-3 text-left mb-5 mw-fit-content'}>Gremlin Accords</h1>
                                 <h2 className={'mb-4'}>Smart Contract <span className={'lw-font'}>Solution</span></h2>
                                 <p className={'text-left'}>
-                                    Smart Contract Solution
-                                    EndGame builds a Smart Contract that changes the idea of investing and reduces market manipulation. It is open-source, immutable, and safe to attacks.
+                                    A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The Gremlin Accords Smart Contract will be open-source, immutable, and autonomous. This means that the entire world can verify the validity of the contract, but no one will be able to influence the outcome once the contract is set in place.
                                 </p>
                             </Col>
                         </Row>

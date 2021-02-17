@@ -53,6 +53,25 @@
   font-size: 24px;
 }
 
+.gremlin-bg {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  color: white !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://static.wixstatic.com/media/578455_9968e1ed9026400da3056950043d3451~mv2.jpeg/v1/fill/w_980,h_855,al_c,q_85,usm_0.66_1.00_0.01/578455_9968e1ed9026400da3056950043d3451~mv2.webp")
+}
+.gremlin-bg::before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
 
 .lw-font {
   font-weight: 200 !important;

@@ -18,32 +18,42 @@ class Splash extends Component {
                 <Row>
                     <Col md={12}>
                         <Image fluid className={'mb-4'} src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'} />
-                        <p>The EndGame Team's aim is to make sure fairness and transparency prevail in this GameStop
-                            situation. We are proposing a solution that will end the conflict by delivering a swift and
-                            decisive victory to one side.
+                        <p><strong>
+                            The aim of the EndGame Team is to make sure fairness and transparency prevail in the
+                            GameStop situation. This event has revealed many flaws in the stock market. The EndGame
+                            team is proposing a de-fi solution to fix the major issues in the financial system.</strong>
                         </p>
-                        <p>Our goal is to create a Smart Contract that allows people to BOLD (BUY and HOLD) $GME.
-                            You can buy the $GME stock at the market price ($55) and "Name Your Price" that you would
-                            like to sell at (i.e. $1000). Then the $GME stock is locked into the smart contract and you are issued a crypto coin called $GS, which can only be redeemed when your precondition is met. (Read more about Smart Contracts: link here)
+                        <p>Lack of transparency allows deceptive agents to use various market manipulation techniques
+                            that are harmful to the financial system. These techniques include overshorting shares,
+                            spreading misinformation, failing to disclose positions, and even creating counterfeit
+                            shares. On a blockchain system, it would be impossible for deceptive agents to hide
+                            their positions or create fake shares.
                         </p>
-                        <p>This would destroy all incentives to perform scare tactics to get investors to sell $GME,
-                            since they would be locked up. Not only that, if all 65 million shares are locked up in this
-                            contract, and there are still trades being made, it would be clear that those trades are
-                            made with counterfeit stocks (Read more about BlockChain: link here)
+                        <p><strong>Currently, some hedge funds find themselves in a position that require them to
+                            buy back all shares of $GME. In order to minimize their losses, these entities
+                            must wait for the price of $GME to drop. Each passing day, these entities are losing
+                            millions of dollars to pay interest on their borrowed shares. The EndGame team would
+                            argue that these entities'  livelihoods require them to take drastic measures to lower
+                            the price of $GME. These drastic measures are harmful to our financial system, so the
+                            GameStop situation must come to an end before it destroys the financial systems that
+                            we all rely on.</strong>
                         </p>
+                        <p>Therefore, we are proposing a solution that would allow people to buy and hold onto shares
+                            of $GME until it reaches a desirable selling price. All of the transactions will be
+                            performed on a smart contract, agreed upon between the seller and the buyer. This smart
+                            contract would be built on the Stellar platform using $XLM, which would allow people from
+                            all over the world to participate and shape the desirable end game to the GameStop
+                            situation.</p>
                         <h2 className={'p-3 my-5 border-boxed'} style={{maxWidth: 'fit-content'}}>Here's how it works</h2>
-                        <p>An investor buys $GME at the market price and is given a crypto coin called GameStonk,
-                            which is redeemable for $GME when the stock reaches the "Name Your Price".
+                        <p>The smart contract would allow a seller and a buyer to agree upon the trading price for $GME. Upon purchase, the share of $GME is locked into the smart contract, and the buyer receives a token called $GS. This $GS token is pegged to $GME, and the $GS token is redeemable for $GME when the stock reaches a predetermined price. While the $GME share is locked up in the smart contract, the investor would be free to trade their $GS token 24/7 directly with other investors.
                         </p>
-                        <p>This smart contract provides transparency and certainty, which can bring a quick and
-                            decisive end to the GameStop situation. This can prevent a nasty fallout from this
-                            situation that does not involve further market manipulation, financial collapse, or a
-                            government bailout. (See how you can get involved below)
+                        <p>There are many advantages of locking up the shares of $GME in a smart contract. First, we can keep an accurate count of the number of floating shares. Imagine that millions of people decide to lock up their shares of $GME in the smart contract. Let's say that institutions also partake in this action and all available shares of $GME are locked into the smart contract. Then we discover that there are still millions of shares trading on the stock market. We would have discovered counterfeit shares! The Smart Contract also prevents entities from artificially lowering the selling price of $GME, because all investors would be able to determine their own selling price. Last but not least, locking up shares of $GME would provide GameStop the capital and time to grow as a company.
                         </p>
+                        <p>This smart contract is built on blockchain technology which ensures security and transparency over ownership. Transparency would deter blatant acts of market manipulation tactics that are harmful to our financial system. We hope to prevent fallout from this GameStop situation that does not involve further market manipulation, financial collapse, or a government bailout.</p>
 
 
                         <Image fluid
-                               src={'https://static.wixstatic.com/media/578455_7d7cad45e08546a7bf2a7af71e8acafc~mv2.jpeg/v1/fill/w_2846,h_1360,al_c,q_90,usm_0.66_1.00_0.01/578455_7d7cad45e08546a7bf2a7af71e8acafc~mv2.webp'}/>
+                               src={'https://static.wixstatic.com/media/578455_94cd23a885b74ca3a324c812e06e76a4~mv2.jpeg/v1/fill/w_980,h_680,al_c,q_85,usm_0.66_1.00_0.01/578455_94cd23a885b74ca3a324c812e06e76a4~mv2.webp'}/>
 
 
                         <h2 className={'p-3 my-5 border-boxed'} style={{maxWidth: 'fit-content'}}>Whitepaper</h2>
