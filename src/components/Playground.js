@@ -2,9 +2,7 @@ import React, {Component,Fragment} from 'react';
 import {Container,Navbar,Row,Col,Image,Nav,Button,Spinner,Alert} from "react-bootstrap";
 import './styles/splash.css';
 
-import logo from '../assets/logo.png';
-import sendPayment from "../helpers/sendPayment";
-import issueAsset from "../helpers/issueAsset";
+import _detectEthereumProvider from "../helpers/services/metamask/metamask";
 import AppNav from "./AppNav";
 class Playground extends Component {
 
@@ -33,38 +31,43 @@ class Playground extends Component {
         return (
             <div>
                 <AppNav>
-                    <Container style={{minHeight: '100vh'}} >
-                        {response && <Alert className={'mt-5'} onClose={() => {
-                            this.setState({response: null})
-                        }} variant={'success'} dismissible>{response}</Alert>}
-                        <Row className={'my-5'}>
-                            <Col>
-                                <h2 className={'mb-3'}>Payments (XLM)</h2>
-                                {loading ?
-                                    <Fragment><Spinner animation={'border'} /><p>Please wait while we process your payment</p></Fragment>
-                                    :
-                                    <Button onClick={() => {
-                                        this.sendTestPayment();
-                                    }}>Send Test Payment</Button>
-                                }
-                            </Col>
-                        </Row>
-                        <hr/>
-                        {response_asset && <Alert className={'mt-5'} onClose={() => {
-                            this.setState({response_asset: null})
-                        }} variant={'success'} dismissible>{response_asset}</Alert>}
-                        <Row className={'mt-5'}>
-                            <Col>
-                                <h2 className={'mb-3'}>Issuing Assets (GameStonk)</h2>
-                                {loading_asset ?
-                                    <Fragment><Spinner animation={'border'} /><p>Please wait while we process your payment</p></Fragment>
-                                    :
-                                    <Button onClick={() => {
-                                        this.issueTestAsset();
-                                    }}>Issue Test Asset</Button>
-                                }
-                            </Col>
-                        </Row>
+                    {/*<Container style={{minHeight: '100vh'}} >*/}
+                    {/*    {response && <Alert className={'mt-5'} onClose={() => {*/}
+                    {/*        this.setState({response: null})*/}
+                    {/*    }} variant={'success'} dismissible>{response}</Alert>}*/}
+                    {/*    <Row className={'my-5'}>*/}
+                    {/*        <Col>*/}
+                    {/*            <h2 className={'mb-3'}>Payments (XLM)</h2>*/}
+                    {/*            {loading ?*/}
+                    {/*                <Fragment><Spinner animation={'border'} /><p>Please wait while we process your payment</p></Fragment>*/}
+                    {/*                :*/}
+                    {/*                <Button onClick={() => {*/}
+                    {/*                   _detectEthereumProvider();*/}
+                    {/*                }}>Send Test Payment</Button>*/}
+                    {/*            }*/}
+                    {/*        </Col>*/}
+                    {/*    </Row>*/}
+                    {/*    <hr/>*/}
+                    {/*    {response_asset && <Alert className={'mt-5'} onClose={() => {*/}
+                    {/*        this.setState({response_asset: null})*/}
+                    {/*    }} variant={'success'} dismissible>{response_asset}</Alert>}*/}
+                    {/*    <Row className={'mt-5'}>*/}
+                    {/*        <Col>*/}
+                    {/*            <h2 className={'mb-3'}>Issuing Assets (GameStonk)</h2>*/}
+                    {/*            {loading_asset ?*/}
+                    {/*                <Fragment><Spinner animation={'border'} /><p>Please wait while we process your payment</p></Fragment>*/}
+                    {/*                :*/}
+                    {/*                <Button onClick={() => {*/}
+                    {/*                    this.issueTestAsset();*/}
+                    {/*                }}>Issue Test Asset</Button>*/}
+                    {/*            }*/}
+                    {/*        </Col>*/}
+                    {/*    </Row>*/}
+                    {/*</Container>*/}
+                    <Container style={{minHeight: '100vh'}}>
+                        <Button className={'mt-4'} onClick={() => {
+                                             _detectEthereumProvider();
+                                          }}>Connect MetaMask</Button>
                     </Container>
                 </AppNav>
             </div>
