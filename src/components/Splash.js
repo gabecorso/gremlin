@@ -17,7 +17,7 @@ class Splash extends Component {
             <Container className={'my-5 py-5'}>
                 <Row>
                     <Col md={12}>
-                        <Image fluid className={'mb-4'} src={'https://endgamegremlins.s3.amazonaws.com/Gremlin.jpeg'} />
+                        <Image fluid className={'md-4'} src={'https://endgamegremlins.s3.amazonaws.com/Screen+Shot+2021-02-02+at+12.11.37+AM.png'} />
                         <p><strong>
                             The aim of the EndGame Team is to make sure fairness and transparency prevail in the
                             GameStop situation. This event has revealed many flaws in the stock market. The EndGame
@@ -53,16 +53,16 @@ class Splash extends Component {
 
 
                         <Image fluid
-                               src={'https://static.wixstatic.com/media/578455_94cd23a885b74ca3a324c812e06e76a4~mv2.jpeg/v1/fill/w_980,h_680,al_c,q_85,usm_0.66_1.00_0.01/578455_94cd23a885b74ca3a324c812e06e76a4~mv2.webp'}/>
+                               src={'https://endgamegremlins.s3.amazonaws.com/Endgame.jpeg'}/>
 
 
                         <h2 className={'p-3 my-5 border-boxed'} style={{maxWidth: 'fit-content'}}>Whitepaper</h2>
                         <p>
                             Interested in learning more details? Check out our
                             <Nav.Link className={'d-inline-block'} href="/whitepaper">
-                                <strong>Whitepaper</strong>
+                               <strong>Whitepaper</strong>
                             </Nav.Link>
-                            for a deep dive!
+                        for a deep dive!
                         </p>
 
                     </Col>
