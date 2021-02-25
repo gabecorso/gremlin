@@ -31,10 +31,11 @@ class PG13 extends Component {
                                     counter-effective. So our philosophy is PG-13 to promote nuanced changes
                                     to securities regulation.
                                 </p>
+                                <Image fluid className={'mb-4'} src={'https://endgamegremlins.s3.amazonaws.com/PG13.jpeg'}></Image>
                                 <h2 className={'text-left mb-3'}>Acronym</h2>
                                 <div className={'acronym-wrapper'}>
                                     <div className={'mb-4'}>
-                                        <strong>P</strong>rinsoner's Dilemma
+                                        <strong>P</strong>risoner's Dilemma
                                     </div>
                                     <div className={'mb-4'}>
                                         <strong>G</strong>roup Economics

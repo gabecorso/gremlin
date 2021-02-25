@@ -17,7 +17,7 @@ class Splash extends Component {
             <Container className={'my-5 py-5'}>
                 <Row>
                     <Col md={12}>
-                        <Image fluid className={'mb-4'} src={'https://static.wixstatic.com/media/578455_d314e8b8cdad4f3bab132ed22d2d2261~mv2.png/v1/crop/x_2,y_0,w_950,h_326/fill/w_1139,h_391,al_c,lg_1,q_90/Screen%20Shot%202021-02-04%20at%206_00_31%20PM.webp"'} />
+                        <Image fluid className={'mb-4'} src={'https://endgamegremlins.s3.amazonaws.com/Gremlin.jpeg'} />
                         <p><strong>
                             The aim of the EndGame Team is to make sure fairness and transparency prevail in the
                             GameStop situation. This event has revealed many flaws in the stock market. The EndGame
