@@ -8,6 +8,7 @@ import Gamestonk from "./Gamestonk";
 import Whitepaper from "./Whitepaper";
 import Gremlin from "./Gremlin";
 import Donate from "./Donate";
+import Endgame from "./Endgame";
 import FreeMarket from "./FreeMarket";
 import GuildList from "./GuildList";
 import YourBadges from "./YourBadges";

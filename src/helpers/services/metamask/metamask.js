@@ -8,8 +8,7 @@ export default async function _detectEthereumProvider() {
     if (provider) {
         // From now on, this should always be true:
         // provider === window.ethereum
-      console.log('provide', provider)
-
+        console.log('provide', provider)
         console.log(provider.isConnected());
         await connect(provider)
     } else {

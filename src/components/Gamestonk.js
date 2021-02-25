@@ -43,9 +43,8 @@ class Gamestonk extends Component {
 
                                         <li>Investors can freely trade $GS with other investors 24/7 without being limited to the stock market hours (9:30 AM -4:30 PM EST).</li>
 
-                            </ul>
-
-                                <Image fluid src={'https://static.wixstatic.com/media/578455_ce5a8a097327477ca652bd5566a2c1a0~mv2.jpeg/v1/fill/w_788,h_498,al_c,q_85,usm_0.66_1.00_0.01/578455_ce5a8a097327477ca652bd5566a2c1a0~mv2.webp'} />
+                                </ul>
+                                <Image fluid src={'https://endgamegremlins.s3.amazonaws.com/GameStonk.jpg'} />
                             </Col>
                         </Row>
                     </Container>
