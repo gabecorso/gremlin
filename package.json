@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
     "dotenv": "^8.2.0",
+    "jdenticon": "^3.1.0",
     "node-fetch": "^2.6.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
