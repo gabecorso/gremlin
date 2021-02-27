@@ -4,21 +4,36 @@ import detectEthereumProvider from '@metamask/detect-provider';
 let currentAccount = null;
 export default async function _detectEthereumProvider() {
     const provider = await detectEthereumProvider();
-
+    let success = false;
+    let error = null
     if (provider) {
         // From now on, this should always be true:
         // provider === window.ethereum
         console.log('provide', provider)
-        console.log(provider.isConnected());
-        await connect(provider)
+        console.log(provider.selectedAddress, 'selected address')
+        try {
+            await connect(provider)
+            success = true;
+        } catch(e) {
+            success = false
+            error = e
+        }
     } else {
-        console.log('Please install MetaMask!');
+        error = 'Please install MetaMask!'
+        console.log(error);
     }
+    return new Promise((resolve, reject) => {
+        if(success) {
+            resolve(provider);
+        } else {
+            reject(`Unable to Connect to MetaMask: ${error}`)
+        }
+    })
 };
 
 async function connect(ethereum) {
     console.log('connect now');
-    ethereum
+    return ethereum
         .request({ method: 'eth_requestAccounts' })
         .then(handleAccountsChanged)
         .catch((err) => {
@@ -40,6 +55,7 @@ function handleAccountsChanged(accounts) {
     } else if (accounts[0] !== currentAccount) {
         currentAccount = accounts[0];
         // Do any other work!
-        console.log('ggggg');
+        console.log('ggggg', currentAccount);
+        return '';
     }
 }
