@@ -20,24 +20,29 @@ class AppNav extends Component {
         this.handleSignIn = () => {
             this.setState({show:true, loading: true});
             _detectEthereumProvider().then((result) => {
-                this.setState({metaMaskProvider: result, loading: false, isLoggedIn: true, metaMaskAddress: result && result.selectedAddress})
+                this.setState({
+                    metaMaskProvider: result,
+                    loading: false,
+                    isLoggedIn: true,
+                    metaMaskAddress: result && result.selectedAddress
+                })
             }).catch(err => {
                 this.setState({error: err, loading: false});
             });
         }
         this.getIcon = (value, size=200) => {
             const png = jdenticon.toSvg(value, size);
-            console.log(png, 'icon');
             return png;
         }
     }
 
     componentDidMount() {
-        console.log('mount')
         detectEthereumProvider().then((provider) => {
-            console.log(provider, 'after', provider.selectedAddress)
             if(provider && provider.selectedAddress) {
-                this.setState({metaMaskAddress: provider.selectedAddress, isLoggedIn: true})
+                this.setState({
+                    metaMaskAddress: provider.selectedAddress,
+                    isLoggedIn: true
+                })
             }
         })
     }
