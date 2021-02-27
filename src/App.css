@@ -126,6 +126,10 @@
   box-shadow: 7px 7px red;
 }
 
+.word-break-all {
+  word-break: break-all;
+}
+
 ul li {
  font-weight: bold;
 }

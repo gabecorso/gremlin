@@ -85,7 +85,7 @@ class AppNav extends Component {
                             {isLoggedIn ?
                                 <div><span>My Account:</span><span className={'mx-2'}><div style={{width: 20, height: 20}} className={'d-inline-block'} dangerouslySetInnerHTML={{
                                     __html: this.getIcon(metaMaskAddress, 20)
-                                }} /></span> {metaMaskAddress}</div>
+                                }} /></span> <span className={'word-break-all'}>{metaMaskAddress}</span></div>
                                 :
                                 <Button disabled={loading} onClick={() => {this.handleSignIn()}}>Sign In with Metamask</Button>
                             }
