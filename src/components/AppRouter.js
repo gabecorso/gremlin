@@ -15,6 +15,7 @@ import YourBadges from "./YourBadges";
 import ContactUs from "./ContactUs"
 import GetInvolved from "./GetInvolved";
 import BountyProgram from "./BountyProgram";
+import PaypalDonate from "./PaypalDonate";
 class AppRouter extends Component {
 
     constructor(props) {
@@ -58,6 +59,9 @@ class AppRouter extends Component {
                         </Route>
                         <Route path="/donate">
                            <Donate />
+                        </Route>
+                        <Route path="/paypal-donate">
+                            <PaypalDonate />
                         </Route>
                         <Route path="/guild-list">
                            <GuildList />
