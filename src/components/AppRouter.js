@@ -60,9 +60,6 @@ class AppRouter extends Component {
                         <Route path="/donate">
                            <Donate />
                         </Route>
-                        <Route path="/paypal-donate">
-                            <PaypalDonate />
-                        </Route>
                         <Route path="/guild-list">
                            <GuildList />
                         </Route>
