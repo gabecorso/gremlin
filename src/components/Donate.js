@@ -1,6 +1,7 @@
 import React, {Component,Fragment} from 'react';
 import {Container, Navbar, Row, Col, Card, Image} from "react-bootstrap";
 import './styles/splash.css';
+import PaypalDonate from './PaypalDonate';
 
 
 import AppNav from "./AppNav";
@@ -31,9 +32,18 @@ class Donate extends Component {
                                 </div>
                             </Col>
                         </Row>
-
+                        <h2 className ={'mb-5'}>Paypal Donation</h2>
                         <Row>
-                           <Col md={6}>
+                            <Col>
+                                <PaypalDonate/>
+                            </Col>
+
+                        </Row>
+                        <h2 className ={'mb-5'}>XLM Donation</h2>
+                        <Row>
+                            
+                            <Col md={6}>
+                                
                                <Image fluid src={'https://static.wixstatic.com/media/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.png/v1/fill/w_442,h_484,al_c,lg_1,q_85/578455_5dfc2ec5293c4bc6a59ae5b53bd89d39~mv2.webp'}/>
                            </Col>
                             <Col md={6}>
@@ -48,6 +58,9 @@ class Donate extends Component {
                                 <h2>Memo</h2>
                                 <div>write your name to join the guild list</div>
                             </Col>
+                        </Row>
+                        <Row>
+                            {/* <Col md={} */}
                         </Row>
                         
                     </Container>

@@ -15,6 +15,7 @@ import YourBadges from "./YourBadges";
 import ContactUs from "./ContactUs"
 import GetInvolved from "./GetInvolved";
 import BountyProgram from "./BountyProgram";
+import PaypalDonate from "./PaypalDonate";
 class AppRouter extends Component {
 
     constructor(props) {
